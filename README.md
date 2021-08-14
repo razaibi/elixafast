@@ -86,6 +86,7 @@ mix phx.server
 
 ### Other Useful Links
 
+- [Full Stack Phoenix App Generator](https://fullstackphoenix.com/boilerplates/new)
 - [Supabase Realtime](https://github.com/supabase/realtime)
 - [Elixir Style Guide](https://github.com/christopheradams/elixir_style_guide)
 - [Absinthe : GraphQL Implementation for Elixir](https://github.com/absinthe-graphql/absinthe)
