@@ -15,6 +15,34 @@ DB_PASS="<db_password>"
 sudo apt-get update
 ```
 
+- Setup installation for asdf
+
+```
+apt-get -y install build-essential autoconf m4 libncurses5-dev libwxgtk3.0-gtk3-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev openjdk-11-jdk
+```
+
+- Ensure git and curl are installed for asdf.
+
+- Download asdf.
+
+```
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+```
+
+- Add the to bashrc
+
+```
+echo ". $HOME/.asdf/asdf.sh" >> ~/.bashrc
+echo ". $HOME/.asdf/completions/asdf.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+- Add erlang plugin for asdf.
+
+```
+asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
+```
+
 - Download from Erlang Repo
 
 ```
@@ -48,7 +76,7 @@ sudo apt-get -y install elixir
 - Install Hex
 
 ```
-sudo mix local.hex
+sudo mix local.hex --force
 ```
 
 - Install iNotify Tools
